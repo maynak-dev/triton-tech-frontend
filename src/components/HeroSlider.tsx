@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import heroPanels from "@/assets/hero-panels.jpg";
 import heroManufacturing from "@/assets/hero-manufacturing.jpg";
+// Images sourced from company profile PDF
 
 const slides = [
   {

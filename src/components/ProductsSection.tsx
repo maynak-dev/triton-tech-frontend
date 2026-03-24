@@ -1,25 +1,45 @@
-import productPdb from "@/assets/product-pdb.jpg";
-import productPcc from "@/assets/product-pcc.jpg";
+import productLtPanel from "@/assets/product-lt-panel.jpg";
 import productMcc from "@/assets/product-mcc.jpg";
-import productHt from "@/assets/product-ht.jpg";
+import productHmi from "@/assets/product-hmi.jpg";
+import productScada from "@/assets/product-scada.jpg";
+import productPcc from "@/assets/product-pcc.jpg";
+import productApfc from "@/assets/product-apfc.jpg";
+import productBracket from "@/assets/product-bracket.jpg";
+import productHospitalBed from "@/assets/product-hospital-bed.jpg";
+import productAnesthesia from "@/assets/product-anesthesia.jpg";
+import productBabyBed from "@/assets/product-baby-bed.jpg";
+import productStretcher from "@/assets/product-stretcher.jpg";
+import productDressingCart from "@/assets/product-dressing-cart.jpg";
+import productIsolationCart from "@/assets/product-isolation-cart.jpg";
+import productCrashCart from "@/assets/product-crash-cart.jpg";
+import productTrolley from "@/assets/product-trolley.jpg";
+import productAcBracket from "@/assets/product-ac-bracket.jpg";
 
 const products = [
-  { name: "Power Distribution Board (PDB)", image: productPdb },
-  { name: "Power Distribution with APFC", image: productPdb },
-  { name: "Power Control Centre (PCC)", image: productPcc },
-  { name: "Motor Control Centre (MCC)", image: productMcc },
-  { name: "High Tension Panel (HT Panel)", image: productHt },
-  { name: "Low Tension Panel (LT Panel)", image: productPdb },
-  { name: "Automatic Power Factor (APFC)", image: productPcc },
-  { name: "Auto Main Failure Panel (AMF)", image: productMcc },
-  { name: "Sub Distribution Panel", image: productHt },
-  { name: "AC Drive Panel", image: productPdb },
-  { name: "Feeder Pillar Panel (Outdoor)", image: productPcc },
-  { name: "Fire Panel / Fire Alarm Panel", image: productMcc },
-  { name: "PCC Extension Panel", image: productHt },
-  { name: "PLC Panel", image: productPdb },
-  { name: "Busbar Trunking Panel", image: productPcc },
-  { name: "Control Desk / Control Boards", image: productMcc },
+  { name: "LT Panels", image: productLtPanel },
+  { name: "PLC Modules / Microcontrollers", image: productMcc },
+  { name: "MCC / PCC / LDB Panels", image: productPcc },
+  { name: "HMI Touch Screen", image: productHmi },
+  { name: "VFD Module", image: productHmi },
+  { name: "Energy Meter Modbus Comm.", image: productHmi },
+  { name: "SCADA Software", image: productScada },
+  { name: "Wireless PLC I/O Modules", image: productScada },
+  { name: "APFC Panels", image: productApfc },
+  { name: "Solar Products", image: productApfc },
+  { name: "Control Panels – Drive PLC", image: productPcc },
+  { name: "TV Wall Mount Bracket", image: productBracket },
+  { name: "Hospital Bed", image: productHospitalBed },
+  { name: "Stainless Steel Anesthesia Machine", image: productAnesthesia },
+  { name: "Adjustable Hospital Baby Bed", image: productBabyBed },
+  { name: "Hospital Stretcher", image: productStretcher },
+  { name: "Multifunctional Dressing Cart", image: productDressingCart },
+  { name: "Treatment Cart", image: productDressingCart },
+  { name: "Isolation Cart", image: productIsolationCart },
+  { name: "Infusion Cart", image: productIsolationCart },
+  { name: "Nursing Cart", image: productCrashCart },
+  { name: "Emergency Crash Cart", image: productCrashCart },
+  { name: "Medical Trolley", image: productTrolley },
+  { name: "AC Outdoor Unit Mounting Bracket", image: productAcBracket },
 ];
 
 const ProductsSection = () => {
