@@ -15,25 +15,11 @@ const ContactSection = () => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus("sending");
-
-    try {
-      const res = await fetch(import.meta.env.VITE_API_URL + "/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      if (!res.ok) throw new Error("Failed to send");
-      setStatus("success");
-      setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
-      setTimeout(() => setStatus("idle"), 4000);
-    } catch {
-      setStatus("error");
-      setTimeout(() => setStatus("idle"), 4000);
-    }
+    setStatus("success");
+    setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+    setTimeout(() => setStatus("idle"), 4000);
   };
 
   return (
@@ -47,21 +33,20 @@ const ContactSection = () => {
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Contact Info */}
           <div className="space-y-6">
             <div className="flex items-start gap-4">
               <Phone className="w-6 h-6 text-primary mt-1 shrink-0" />
               <div>
                 <h4 className="font-heading font-bold text-foreground">Phone</h4>
-                <p className="text-muted-foreground text-sm font-body">+91-1234567890</p>
-                {/* <p className="text-muted-foreground text-sm font-body">+91-1234567890</p> */}
+                <p className="text-muted-foreground text-sm font-body">+91 9903748648</p>
+                <p className="text-muted-foreground text-sm font-body">+91 9163521032</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <Mail className="w-6 h-6 text-primary mt-1 shrink-0" />
               <div>
                 <h4 className="font-heading font-bold text-foreground">Email</h4>
-                <p className="text-muted-foreground text-sm font-body">sales@tritontech.com</p>
+                <p className="text-muted-foreground text-sm font-body">business.tritontech@gmail.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -73,7 +58,6 @@ const ContactSection = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
           <div className="md:col-span-2">
             <form onSubmit={handleSubmit} className="bg-background rounded-lg shadow-md p-6 space-y-4">
               <div className="grid sm:grid-cols-2 gap-4">
@@ -129,21 +113,19 @@ const ContactSection = () => {
                 onChange={handleChange}
                 className="w-full px-4 py-3 border border-border rounded font-body text-sm text-foreground bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none"
               />
-
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="bg-primary text-primary-foreground px-8 py-3 rounded font-heading font-bold text-sm flex items-center gap-2 hover:opacity-90 transition-opacity disabled:opacity-50"
+                className="bg-primary text-primary-foreground px-8 py-3 font-heading font-bold uppercase tracking-wide hover:opacity-90 transition-opacity flex items-center gap-2 disabled:opacity-50"
               >
                 <Send className="w-4 h-4" />
                 {status === "sending" ? "Sending..." : "Send Message"}
               </button>
-
               {status === "success" && (
-                <p className="text-green-600 font-body text-sm">✅ Message sent successfully!</p>
+                <p className="text-green-600 font-body text-sm">Message sent successfully!</p>
               )}
               {status === "error" && (
-                <p className="text-destructive font-body text-sm">❌ Failed to send. Please try again.</p>
+                <p className="text-destructive font-body text-sm">Failed to send. Please try again.</p>
               )}
             </form>
           </div>

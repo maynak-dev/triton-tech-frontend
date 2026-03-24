@@ -5,13 +5,13 @@ const TopBar = () => {
     <div className="bg-topbar text-topbar-foreground text-sm">
       <div className="container mx-auto flex items-center justify-between py-2 px-4">
         <span className="font-body">
-          India's #1 Electrical Control Panels Manufacturers and Exporters.
+          Because Your Safety Is Not Optional.
         </span>
         <div className="hidden md:flex items-center gap-4">
-          <a href="#products" className="flex items-center gap-1 hover:text-primary transition-colors">
+          <a href="#products" className="flex items-center gap-1 hover:text-accent transition-colors">
             <Phone className="w-3.5 h-3.5" /> Products Range
           </a>
-          <a href="#contact" className="flex items-center gap-1 hover:text-primary transition-colors">
+          <a href="#contact" className="flex items-center gap-1 hover:text-accent transition-colors">
             <Wrench className="w-3.5 h-3.5" /> Service & AMC
           </a>
           <a

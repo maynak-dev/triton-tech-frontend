@@ -4,6 +4,7 @@ import HeroSlider from "@/components/HeroSlider";
 import AboutSection from "@/components/AboutSection";
 import ProductsSection from "@/components/ProductsSection";
 import ManufacturingSection from "@/components/ManufacturingSection";
+import PortfolioSection from "@/components/PortfolioSection";
 import StatsSection from "@/components/StatsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -17,6 +18,7 @@ const Index = () => {
       <AboutSection />
       <ProductsSection />
       <ManufacturingSection />
+      <PortfolioSection />
       <StatsSection />
       <ContactSection />
       <Footer />

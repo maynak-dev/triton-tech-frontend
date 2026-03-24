@@ -10,26 +10,26 @@ const AboutSection = () => {
               Welcome to
             </h2>
             <h3 className="font-heading text-2xl md:text-3xl font-bold text-primary mb-6">
-              Triton Tech Enterprise – Electrical Control Panels Manufacturers in India
+              Triton Tech Enterprise
             </h3>
             <div className="w-20 h-1 bg-primary mb-6" />
             <p className="text-muted-foreground font-body leading-relaxed mb-4">
-              We, Triton Tech Enterprise, is a fast growing firm in electrical field, for manufacturing Power and Control Distribution Boards. We specialize in range of Power and Control Panels for all kind of industries. We have full facility for testing various types of Distribution Boards.
+              Triton Tech Enterprise began its journey in 2020 as a small group of passionate professionals dedicated to providing reliable technical support in the field of electrical and automation solutions. Through consistent effort and expertise, the company quickly grew in recognition.
             </p>
             <p className="text-muted-foreground font-body leading-relaxed mb-6">
-              Since our establishment, we have emerged as India's one of the most prominent manufacturers, suppliers, and service providers of a comprehensive range of Electrical Control Panels. Our products are manufactured by using quality basic material and environment friendly processing techniques.
+              By 2022, it had established itself as a trusted Electrical and Electronics manufacturer, serving both local and national clients. Since then, Triton Tech Enterprise has continued to expand its capabilities, building a strong reputation as a reliable partner in delivering innovative and high-quality solutions across diverse industries.
             </p>
             <h4 className="font-heading font-bold text-foreground mb-2">
-              Triton Tech Enterprise is a SIEMENS - SIEPAN ELITE Technology Partner.
+              Products & Services
             </h4>
             <p className="text-muted-foreground font-body text-sm leading-relaxed">
-              In the context of the cooperation agreement, we grant the company named above the right to manufacture and sell the SIEPAN ELITE design verified low-voltage power distribution board.
+              Triton Tech Enterprise specializes in the design, supply, and commissioning of advanced automation solutions including PLC Panels, SCADA Software, HMI/MMI Panels, VFD/DC Drive Panels, Hydraulic & Pneumatic Systems, and Instrumentation across Steel, Power, Cement, Food Processing, Water Treatment, Defense, and more.
             </p>
           </div>
           <div className="flex justify-center">
             <img
               src={aboutImage}
-              alt="M.B. Automation Engineer"
+              alt="Triton Tech Enterprise"
               loading="lazy"
               width={640}
               height={512}

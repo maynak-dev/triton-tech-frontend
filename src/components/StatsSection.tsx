@@ -7,10 +7,6 @@ const stats = [
   { label: "Customer Satisfaction", value: 99 },
 ];
 
-// const exportMarkets = [
-//   "Market1", "Market2", "Market3", "Market4", "Market5", "Market6",
-// ];
-
 const StatsSection = () => {
   const [inView, setInView] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -28,7 +24,7 @@ const StatsSection = () => {
     <section className="py-16 bg-secondary text-secondary-foreground" ref={ref}>
       <div className="container mx-auto px-4">
         <h2 className="font-heading text-3xl font-bold text-center mb-10">
-          Sales & Distribution / Export Market
+          Sales & Distribution
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
           {stats.map((stat) => (
@@ -53,21 +49,9 @@ const StatsSection = () => {
             </div>
           ))}
         </div>
-
-        <p className="text-center text-secondary-foreground/80 font-body text-sm max-w-3xl mx-auto mb-6">
-          Triton Tech Enterprise are the manufacturers & exporters of Power Distribution Board, Power Control Centre, Motor Control Centre, HT Panel, LT Panel, APFC Panel, AMF Panel, Sub Distribution Panel, AC Drive Panel, PLC Panel, Control Desk, Busbar Trunking Panel and customised control panel products to abroad markets.
+        <p className="text-center text-secondary-foreground/80 font-body text-sm max-w-3xl mx-auto">
+          Triton Tech Enterprise serves clients across Steel, Power, Cement, Food Processing, Water Treatment, Road-Rail Signaling, Airports, Defense, Colleges & Training Labs and Surgical Equipment industries.
         </p>
-
-        {/* <div className="flex flex-wrap justify-center gap-3">
-          {exportMarkets.map((market) => (
-            <span
-              key={market}
-              className="bg-primary text-primary-foreground px-4 py-2 text-sm font-heading font-medium rounded-sm"
-            >
-              {market}
-            </span>
-          ))}
-        </div> */}
       </div>
     </section>
   );

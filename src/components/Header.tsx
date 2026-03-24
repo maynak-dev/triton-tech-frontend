@@ -7,8 +7,7 @@ const navItems = [
   { label: "ABOUT US", href: "#about" },
   { label: "PRODUCTS", href: "#products" },
   { label: "MANUFACTURING", href: "#manufacturing" },
-  { label: "QUALITY", href: "#quality" },
-  { label: "CLIENTELE", href: "#clients" },
+  { label: "PORTFOLIO", href: "#portfolio" },
   { label: "CONTACT US", href: "#contact" },
 ];
 
@@ -33,22 +32,21 @@ const Header = () => {
             <Phone className="w-8 h-8 text-primary" />
             <div>
               <div className="font-heading font-bold text-sm text-foreground">Phone</div>
-              <div className="text-muted-foreground text-xs">+91-93759-60914</div>
-              <div className="text-muted-foreground text-xs">+91-93282-47164</div>
+              <div className="text-muted-foreground text-xs">+91 9903748648</div>
+              <div className="text-muted-foreground text-xs">+91 9163521032</div>
             </div>
           </div>
           <div className="flex items-center gap-2">
             <Mail className="w-8 h-8 text-primary" />
             <div>
               <div className="font-heading font-bold text-sm text-foreground">Email</div>
-              <div className="text-muted-foreground text-xs">sales@mbautomation.co.in</div>
+              <div className="text-muted-foreground text-xs">business.tritontech@gmail.com</div>
             </div>
           </div>
         </div>
 
-        {/* Mobile hamburger */}
         <button
-          className="md:hidden p-2 text-foreground"
+          className="lg:hidden p-2 text-foreground"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -56,7 +54,6 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Desktop nav */}
       <nav className="bg-secondary hidden md:block">
         <div className="container mx-auto px-4">
           <ul className="flex items-center gap-0">
@@ -74,7 +71,6 @@ const Header = () => {
         </div>
       </nav>
 
-      {/* Mobile nav */}
       {menuOpen && (
         <nav className="bg-secondary md:hidden">
           <ul className="flex flex-col">

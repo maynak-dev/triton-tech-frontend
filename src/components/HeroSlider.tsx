@@ -2,23 +2,22 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import heroPanels from "@/assets/hero-panels.jpg";
 import heroManufacturing from "@/assets/hero-manufacturing.jpg";
-// Images sourced from company profile PDF
 
 const slides = [
   {
     image: heroPanels,
     title: "Automation & Controls",
-    subtitle: "We are largest manufacturers & exporters of Industrial Automation Electrical Control Panels in India.",
+    subtitle: "Leading manufacturers of Industrial Automation, Electrical Control Panels & Medical Equipment.",
   },
   {
     image: heroManufacturing,
     title: "Advanced Technology",
-    subtitle: "We provide Commercial & Residential Automation Solutions by industry-leading expertise and latest technology.",
+    subtitle: "We provide Commercial & Residential Automation Solutions with industry-leading expertise.",
   },
   {
     image: heroPanels,
-    title: "Next-Gen Manufacturing",
-    subtitle: "Advanced, Smarter and more sustainable manufacturing facilities to produce innovative power solutions.",
+    title: "Because Your Safety Is Not Optional",
+    subtitle: "Innovative and high-quality solutions across diverse industries since 2020.",
   },
 ];
 
@@ -48,7 +47,7 @@ const HeroSlider = () => {
             alt={slides[current].title}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-foreground/50" />
         </motion.div>
       </AnimatePresence>
 
@@ -74,7 +73,7 @@ const HeroSlider = () => {
                   href="#products"
                   className="bg-primary text-primary-foreground px-6 py-3 font-heading font-bold uppercase tracking-wide hover:opacity-90 transition-opacity"
                 >
-                  Click More
+                  Our Products
                 </a>
                 <a
                   href="#contact"
