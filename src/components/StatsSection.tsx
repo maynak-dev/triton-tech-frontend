@@ -7,9 +7,9 @@ const stats = [
   { label: "Customer Satisfaction", value: 99 },
 ];
 
-const exportMarkets = [
-  "Africa", "Kathmandu Nepal", "Dubai UAE", "Bangladesh", "Saudi Arabia", "Malaysia Singapore",
-];
+// const exportMarkets = [
+//   "Market1", "Market2", "Market3", "Market4", "Market5", "Market6",
+// ];
 
 const StatsSection = () => {
   const [inView, setInView] = useState(false);
@@ -58,7 +58,7 @@ const StatsSection = () => {
           Triton Tech Enterprise are the manufacturers & exporters of Power Distribution Board, Power Control Centre, Motor Control Centre, HT Panel, LT Panel, APFC Panel, AMF Panel, Sub Distribution Panel, AC Drive Panel, PLC Panel, Control Desk, Busbar Trunking Panel and customised control panel products to abroad markets.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-3">
+        {/* <div className="flex flex-wrap justify-center gap-3">
           {exportMarkets.map((market) => (
             <span
               key={market}
@@ -67,7 +67,7 @@ const StatsSection = () => {
               {market}
             </span>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -22,9 +22,9 @@ const Footer = () => {
           <div>
             <h3 className="font-heading font-bold text-lg mb-3">Contact Info</h3>
             <div className="space-y-2 font-body text-sm text-topbar-foreground/80">
-              <p>📞 +91-93759-60914 / +91-93282-47164</p>
-              <p>📧 sales@mbautomation.co.in</p>
-              <p>📍 India, Silvassa, Madhya Pradesh</p>
+              <p>📞 +91-1234567890 </p>
+              <p>📧 sales@tritontech.com</p>
+              <p>📍 India</p>
             </div>
           </div>
         </div>

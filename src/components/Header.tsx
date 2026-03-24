@@ -1,4 +1,5 @@
-import { Phone, Mail } from "lucide-react";
+import { useState } from "react";
+import { Phone, Mail, Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const navItems = [
@@ -12,6 +13,8 @@ const navItems = [
 ];
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="bg-background shadow-md sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between py-3 px-4">
@@ -42,11 +45,21 @@ const Header = () => {
             </div>
           </div>
         </div>
+
+        {/* Mobile hamburger */}
+        <button
+          className="md:hidden p-2 text-foreground"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
       </div>
 
-      <nav className="bg-secondary">
+      {/* Desktop nav */}
+      <nav className="bg-secondary hidden md:block">
         <div className="container mx-auto px-4">
-          <ul className="flex flex-wrap items-center gap-0">
+          <ul className="flex items-center gap-0">
             {navItems.map((item) => (
               <li key={item.label}>
                 <a
@@ -60,6 +73,25 @@ const Header = () => {
           </ul>
         </div>
       </nav>
+
+      {/* Mobile nav */}
+      {menuOpen && (
+        <nav className="bg-secondary md:hidden">
+          <ul className="flex flex-col">
+            {navItems.map((item) => (
+              <li key={item.label}>
+                <a
+                  href={item.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-6 py-3 text-secondary-foreground text-sm font-heading font-medium hover:bg-primary hover:text-primary-foreground transition-colors border-b border-secondary-foreground/10"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </header>
   );
 };
